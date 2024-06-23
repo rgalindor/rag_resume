@@ -6,7 +6,7 @@ authors = ["Roberto Galindo Ramírez"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.11"
+python = ">=3.11,<4.0"
 ipykernel = "^6.23.2"
 notebook = "^6.5.4"
 pyarrow = "^12.0.1"
@@ -22,6 +22,9 @@ plotly = "^5.15.0"
 dvc = "^2.10.0"
 hydra-core = "^1.1.1"
 pdoc3 = "^0.10.0"
+llama-index-core = "^0.10.48"
+llama-index-llms-openai = "^0.1.22"
+python-dotenv = "^1.0.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"

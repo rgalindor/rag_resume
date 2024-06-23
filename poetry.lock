@@ -2459,6 +2459,20 @@ typing-inspect = ">=0.8.0"
 wrapt = "*"
 
 [[package]]
+name = "llama-index-embeddings-openai"
+version = "0.1.10"
+description = "llama-index embeddings openai integration"
+optional = false
+python-versions = "<4.0,>=3.8.1"
+files = [
+    {file = "llama_index_embeddings_openai-0.1.10-py3-none-any.whl", hash = "sha256:c3cfa83b537ded34d035fc172a945dd444c87fb58a89b02dfbf785b675f9f681"},
+    {file = "llama_index_embeddings_openai-0.1.10.tar.gz", hash = "sha256:1bc1fc9b46773a12870c5d3097d3735d7ca33805f12462a8e35ae8a6e5ce1cf6"},
+]
+
+[package.dependencies]
+llama-index-core = ">=0.10.1,<0.11.0"
+
+[[package]]
 name = "llama-index-llms-openai"
 version = "0.1.22"
 description = "llama-index llms openai integration"
@@ -2471,6 +2485,26 @@ files = [
 
 [package.dependencies]
 llama-index-core = ">=0.10.24,<0.11.0"
+
+[[package]]
+name = "llama-index-readers-file"
+version = "0.1.25"
+description = "llama-index readers file integration"
+optional = false
+python-versions = "<4.0,>=3.8.1"
+files = [
+    {file = "llama_index_readers_file-0.1.25-py3-none-any.whl", hash = "sha256:bc659e432d441c445e110580340675aa60abae1d82add4f65e559dfe8add541b"},
+    {file = "llama_index_readers_file-0.1.25.tar.gz", hash = "sha256:238ddd98aa377d6a44322013eb848056037c80ad84571ea5bf451a640fff4d5c"},
+]
+
+[package.dependencies]
+beautifulsoup4 = ">=4.12.3,<5.0.0"
+llama-index-core = ">=0.10.37.post1,<0.11.0"
+pypdf = ">=4.0.1,<5.0.0"
+striprtf = ">=0.0.26,<0.0.27"
+
+[package.extras]
+pymupdf = ["pymupdf (>=1.23.21,<2.0.0)"]
 
 [[package]]
 name = "llamaindex-py-client"
@@ -3980,6 +4014,24 @@ files = [
 diagrams = ["jinja2", "railroad-diagrams"]
 
 [[package]]
+name = "pypdf"
+version = "4.2.0"
+description = "A pure-python PDF library capable of splitting, merging, cropping, and transforming PDF files"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "pypdf-4.2.0-py3-none-any.whl", hash = "sha256:dc035581664e0ad717e3492acebc1a5fc23dba759e788e3d4a9fc9b1a32e72c1"},
+    {file = "pypdf-4.2.0.tar.gz", hash = "sha256:fe63f3f7d1dcda1c9374421a94c1bba6c6f8c4a62173a59b64ffd52058f846b1"},
+]
+
+[package.extras]
+crypto = ["PyCryptodome", "cryptography"]
+dev = ["black", "flit", "pip-tools", "pre-commit (<2.18.0)", "pytest-cov", "pytest-socket", "pytest-timeout", "pytest-xdist", "wheel"]
+docs = ["myst_parser", "sphinx", "sphinx_rtd_theme"]
+full = ["Pillow (>=8.0.0)", "PyCryptodome", "cryptography"]
+image = ["Pillow (>=8.0.0)"]
+
+[[package]]
 name = "pytest"
 version = "6.2.5"
 description = "pytest: simple powerful testing with Python"
@@ -4998,6 +5050,17 @@ develop = ["colorama", "cython (>=0.29.33)", "cython (>=3.0.10,<4)", "flake8", "
 docs = ["ipykernel", "jupyter-client", "matplotlib", "nbconvert", "nbformat", "numpydoc", "pandas-datareader", "sphinx"]
 
 [[package]]
+name = "striprtf"
+version = "0.0.26"
+description = "A simple library to convert rtf to text"
+optional = false
+python-versions = "*"
+files = [
+    {file = "striprtf-0.0.26-py3-none-any.whl", hash = "sha256:8c8f9d32083cdc2e8bfb149455aa1cc5a4e0a035893bedc75db8b73becb3a1bb"},
+    {file = "striprtf-0.0.26.tar.gz", hash = "sha256:fdb2bba7ac440072d1c41eab50d8d74ae88f60a8b6575c6e2c7805dc462093aa"},
+]
+
+[[package]]
 name = "tabulate"
 version = "0.9.0"
 description = "Pretty-print tabular data"
@@ -5592,4 +5655,4 @@ test = ["zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<4.0"
-content-hash = "63b879f0d2d78c1565af5d4b68f80a5a1972fb15ced257b59962fe1d1a973b15"
+content-hash = "a8066599e9130ed11b7fe8b6ab27231aa52db572bbb5705b9df13da812a6b50d"
